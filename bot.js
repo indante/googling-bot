@@ -7,9 +7,9 @@ rtm.start();
 
 rtm.on('message', (message) => {
     var text = message.text
-    var google_text = text.slice(4);
-    if(google_text){
-        rtm.sendMessage(`google.com/search?q=${google_text}`, message.channel)
+    var googling_keyword = text.slice(4);
+    var call_sign = text.slice(0,3);
+    if(call_sign==="!구글"){
+        rtm.sendMessage(`google.com/search?q=${googling_keyword}`, message.channel)
     }
-    console.log(text)
 });
