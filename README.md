@@ -1,8 +1,30 @@
 # Googling-Bot
+> Slack에서 편하게(?) 구글링을 해보세요!
 
-### 간략한 설명
-<img src="example.png" width=2000px; height="100%"></img>
+<img src="example.png" width=800px; height=400px></img>
 
-사진과 같이 `!구글` 뒤에 키워드를 구글에 자동으로 검색해주는 봇이다.<br>
-필요한 라이브러리는 `@slack/client`, `dotenv` 이고 `SLACK_TOKEN`은 Slack 페이지에서 토큰값을 받아야한다.
-코드가 보다 완성도 있어지면 README.md를 예쁘게 정리할 예정이다.
+## Get Slack API Token
+
+1. [Slack App Directory](https://slack.com/apps)에 들어간다.
+> Workspace가 없으면 생성하세요.
+
+2. 우측 상단 네비게이션 바 에서 Manage로 접속한 후 Custom Integrations에 들어갑니다.
+3. Bots를 누르고 Add Configuration > Username 입력 > Add Bot Integration(이후에 Icon 등 여러 정보를 등록해도 됨)
+4. `xoxb-... `로 시작하는게 <b>Token</b> 입니다.
+
+## Settings
+
+1. 이 저장소를 Clone 하기 
+> git clone https://github.com/indante/Googling-Bot.git
+2. `npm install` 하기
+> @slack/client, dotenv, pm2 패키지를 다운받기 위해
+3. `touch .env` 하고 위에서 생성한 봇의 Token값을 넣어주기
+
+```js
+// .env
+
+SLACK_TOKEN=xoxb-...
+```
+
+4. `pm2 start bot.js --watch` 하기
+> pm2 패키지를 이용해 실시간 구동하기
