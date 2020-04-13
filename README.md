@@ -15,7 +15,7 @@
 ## Settings
 
 1. 이 저장소를 Clone 하기 
-> git clone https://github.com/indante/Googling-Bot.git
+> `git clone https://github.com/indante/Googling-Bot.git`
 2. `npm install` 하기
 > @slack/client, dotenv, pm2 패키지를 다운받기 위해
 3. `.env` 파일 생성하고 안에 `SLACK_TOKEN` 이름으로 토큰 값을 넣어주기
