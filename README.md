@@ -1,7 +1,7 @@
 # Googling-Bot
 > Slack에서 편하게(?) 구글링을 해보세요!
 
-<img src="example.png" width=800px; height=400px></img>
+<img src="example.png" width=750px; height=400px></img>
 
 ## Get an API Token from Slack
 
