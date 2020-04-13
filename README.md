@@ -3,7 +3,7 @@
 
 <img src="example.png" width=800px; height=400px></img>
 
-## Get Slack API Token
+## Get an API Token from Slack
 
 1. [Slack App Directory](https://slack.com/apps)에 들어간다.
 > Workspace가 없으면 생성하세요.
