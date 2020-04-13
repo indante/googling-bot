@@ -18,7 +18,8 @@
 > git clone https://github.com/indante/Googling-Bot.git
 2. `npm install` 하기
 > @slack/client, dotenv, pm2 패키지를 다운받기 위해
-3. `touch .env` 하고 위에서 생성한 봇의 Token값을 넣어주기
+3. `.env` 파일 생성하고 안에 `SLACK_TOKEN` 이름으로 토큰 값을 넣어주기
+> `touch .env` 커맨드를 이용하면 멋지게 할 수 있음
 
 ```js
 // .env
