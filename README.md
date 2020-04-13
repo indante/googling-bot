@@ -28,4 +28,4 @@ SLACK_TOKEN=xoxb-...
 ```
 
 4. Runnnn Code!
-> `node bot.js`로 해도 되지만 [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/)를 이용하면 간편하게 할 수 있음
+> [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/)를 이용하면 간편하게 할 수 있음 `pm2 start bot.js --watch`
