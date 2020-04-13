@@ -27,5 +27,5 @@
 SLACK_TOKEN=xoxb-...
 ```
 
-4. `pm2 start bot.js --watch` 하기
-> pm2 패키지를 이용해 실시간 구동하기
+4. Runnnn Code!
+> `node bot.js`로 해도 되지만 [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/)를 이용하면 간편하게 할 수 있음
