@@ -7,14 +7,14 @@ rtm.start();
 
 rtm.on('message', (message) => {
     var text = message.text
-    var korean_call_sign = text.slice(0,3);
-    var korean_googling_keyword = encodeURIComponent(text.slice(4));
-    var english_call_sign = text.slice(0,7)
-    var english_googling_keyword = encodeURIComponent(text.slice(8));
-    if(korean_call_sign==="!구글"){
-        rtm.sendMessage(`https://www.google.com/search?q=${korean_googling_keyword}`, message.channel)
+    var koreanCallSign = text.slice(0,3);
+    var koreanGooglingKeyword = encodeURIComponent(text.slice(4));
+    var englishCallSign = text.slice(0,7)
+    var englishGooglingKeyword = encodeURIComponent(text.slice(8));
+    if(koreanCallSign==="!구글"){
+        rtm.sendMessage(`https://www.google.com/search?q=${koreanGooglingKeyword}`, message.channel)
     } 
-    if(english_call_sign==="!google" || english_call_sign === "!Google"){
-        rtm.sendMessage(`https://www.google.com/search?q=${english_googling_keyword}`, message.channel)
+    if(englishCallSign==="!google" || englishCallSign === "!Google"){
+        rtm.sendMessage(`https://www.google.com/search?q=${englishGooglingKeyword}`, message.channel)
     }
 });
